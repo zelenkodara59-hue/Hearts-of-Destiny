@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Hearts of Destiny</title>
+<style>
+body{
+margin:0;
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+#game{
+max-width:700px;
+padding:20px;
+text-align:center;
+}
+button{
+padding:12px 25px;
+font-size:18px;
+margin-top:20px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div id="game">
+<h1>Hearts of Destiny</h1>
+<p id="text">
+Добро пожаловать в Hearts of Destiny.
+Это первая версия нашей визуальной новеллы.
+</p>
+
+<button onclick="nextScene()">Начать</button>
+</div>
+
+<script>
+let scene=0;
+
+function nextScene(){
+scene++;
+
+if(scene===1){
+document.getElementById("text").innerHTML=
+"Ты открываешь глаза в незнакомом месте. Впереди слышатся чьи-то шаги...";
+}else if(scene===2){
+document.getElementById("text").innerHTML=
+"Продолжение скоро появится. ❤️";
+}
+}
+</script>
+
+</body>
+</html>
